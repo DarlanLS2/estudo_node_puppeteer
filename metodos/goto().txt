@@ -1,0 +1,18 @@
+=================
+= goto() method =
+=================
+  ---------------
+  - explanation -
+  ---------------
+  -> O metodo goto() faz o browser navegar até uma pagina
+  -----------------
+  - usage example -
+  -----------------
+  -> await page.goto("https://github.com");
+  -------------
+  - Paremters -
+  -------------
+  const parameters = [
+    url, // Para navegar até o site
+    options (optional) // Configura o comportamento de espera
+  ]

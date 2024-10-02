@@ -1,0 +1,32 @@
+===================
+= launch() method =
+===================
+  ---------------
+  - explanation -
+  ---------------
+  -> Inicializa um navegador
+  -----------------
+  - usage example -
+  -----------------
+  -> const browser = await puppeteer.launch();
+  ---------------------
+  - options parameter -
+  ---------------------
+  const options = {
+    executablePath: '/path/to/your/browser/executable', // Caminho para o executável do navegador
+    headless: true, // Executar o navegador em modo headless (true) ou exibir a janela do navegador (false)
+    slowMo: 100, // Atraso (em milissegundos) entre as operações do Puppeteer
+    defaultViewport: { width: 1280, height: 720 }, // Definir um tamanho de viewport personalizado para o navegador
+    args: ["--no-sandbox", '--disable-setuid-sandbox'], // Array de argumentos de linha de comando adicionais para passar ao navegador
+    ignoreDefaultArgs: ['--disable-extensions'], // Array de argumentos de linha de comando padrão a serem excluídos
+    userDataDir: '/path/to/user/data', // Caminho para o diretório de dados do usuário para estado persistente do navegador
+    ignoreHTTPSErrors: false, // Ignorar erros HTTPS durante a navegação
+    handleSIGINT: true, // Fechar o navegador ao receber um sinal SIGINT (Ctrl+C)
+    handleSIGTERM: true, // Fechar o navegador ao receber um sinal SIGTERM
+    handleSIGHUP: true, // Fechar o navegador ao receber um sinal SIGHUP
+    timeout: 0, // Tempo máximo em milissegundos para aguardar o início da instância do navegador
+    dumpio: false, // Se deve direcionar o stdout e stderr do processo do navegador para o processo pai
+    env: {}, // Variáveis de ambiente a serem passadas para o processo do navegador
+    devtools: false, // Se deve abrir automaticamente o painel DevTools para cada aba
+  };
+
