@@ -7,14 +7,10 @@ const puppeteer = require("puppeteer");
     // Cria uma nova pagina no navegador
     const page = await browser.newPage();
     // Navega ate a pagina da wikipedia
-    await page.goto("https://pt.wikipedia.org/");
-    // Obtem o titulo da pagina e o exibe no console
-    const title = await page.title();
-    console.log(title);
-    /* Procura pelo primeiro elemento h1 e 
-    retorna o conteudo de texto deste elemento*/
-    const heading = await page.$eval("h1", (element) => element.textContent);
-    console.log(heading);
+    await page.goto("https://github.com/DarlanLS2");
+    // Procura o elemento e retorna o textContent deste elemento 
+    const qntdRepositorios = await page.$eval('[class="Counter"]', (element) => element.textContent);
+    console.log(`Esta é a quantidade de repositorios que este perfil possui: ${qntdRepositorios}`);
     // Fechando o browser
     await browser.close();
   } catch (err) {
