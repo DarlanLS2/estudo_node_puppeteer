@@ -2,15 +2,15 @@
 = launch() method =
 ===================
   ---------------
-  - explanation -
+  - Explanation -
   ---------------
   -> Inicializa um navegador
   -----------------
-  - usage example -
+  - Usage example -
   -----------------
   -> const browser = await puppeteer.launch();
   ---------------------
-  - options parameter -
+  - Options parameter -
   ---------------------
   const options = {
     executablePath: '/path/to/your/browser/executable', // Caminho para o executável do navegador

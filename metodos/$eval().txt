@@ -1,0 +1,20 @@
+==================
+= $eval() method =
+==================
+  ---------------
+  - Explanation -
+  ---------------
+  -> Encontra o PRIMEIRO elemento que corresponde ao 
+  seletor e retorna ele como parametro para a pageFunction,
+  pageFuntion é uma função para manipular o elemento.
+  -----------------
+  - Usage example -
+  -----------------
+  -> wait page.$eval("h1", (element) => "este é o elemento" + element.textContent)
+  --------------
+  - Paremeters -
+  --------------
+  const paremters = [
+    seletor, // Elemento para procurar na pagina
+    pageFuntion // Função para manipular o elemento
+  ]

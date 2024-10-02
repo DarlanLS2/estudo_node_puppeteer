@@ -1,0 +1,21 @@
+==================
+= $$eval() method =
+==================
+  ---------------
+  - Explanation -
+  ---------------
+  -> Encontra o TODOS elemento que corresponde ao 
+  seletor e retorna eles dentro de uma array como 
+  parametro para a pageFunction, pageFuntion é uma
+   função para manipular o elemento.
+  -----------------
+  - Usage example -
+  -----------------
+  -> wait page.$$eval("href",(arrayElements) => arrayElements.map((elemento) => elemento.textContent))
+  --------------
+  - Paremeters -
+  --------------
+  const paremters = [
+    seletor, // Elemento para procurar na pagina
+    pageFuntion // Função para manipular o elemento
+  ]

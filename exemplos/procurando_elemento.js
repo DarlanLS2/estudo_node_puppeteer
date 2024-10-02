@@ -1,12 +1,5 @@
-/**************************
- * Explicação de metodos:
- **************************/
-  /*
-   * page.$eval recebe dois parametros (seletor, pageFuntion)
-   * sera procurado no codigo da pagina o primeiro elemento
-   * que corresponde ao seletor, o seletor sera passado como
-   * primeiro parametro da pageFunction 
-   */
+
+  
 
 const puppeteer = require("puppeteer");
 

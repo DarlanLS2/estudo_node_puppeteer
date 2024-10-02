@@ -2,11 +2,11 @@
 = goto() method =
 =================
   ---------------
-  - explanation -
+  - Explanation -
   ---------------
   -> O metodo goto() faz o browser navegar até uma pagina
   -----------------
-  - usage example -
+  - Usage example -
   -----------------
   -> await page.goto("https://github.com");
   -------------
